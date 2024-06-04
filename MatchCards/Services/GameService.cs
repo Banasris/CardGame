@@ -11,8 +11,7 @@ public class GameService
         var stackOfShuffledCards = CardsService.CreateStackOfShuffledCards(shuffledCards);
             
         var random = new Random();
-        int noOfTimesMatched = 0;
-
+       
         // Two players are added in the player list
         var playerList = new List<Player>() { player1, player2 };
 
@@ -32,8 +31,7 @@ public class GameService
             // If cards matched based on the chosen matching condition
             if (CardsService.CardMatched(popCardOne, popCardTwo, matchingCondition))
             {
-                // Increment the value of noOfTimesMatched by 1
-                noOfTimesMatched++;
+                // Increment number of times matched by 1
                 playerList[index].IncrementNoOfTimesMatched();
                 Console.WriteLine($"{playerList[index].GetPlayerName()} called Match!");
 

@@ -65,9 +65,9 @@ public class CardsService
     public static List<Card> CreateDeckOfCards(int pack) //enter number of pack (52 cards in a pack)
     {
         var deckCards = new List<Card>();
+        var packOfCards = CreatePackOfCards();
         for (int i = 0; i < pack; i++)
         {
-            var packOfCards = CreatePackOfCards();
             deckCards.AddRange(packOfCards);
         }
 
