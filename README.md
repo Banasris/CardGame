@@ -1,11 +1,11 @@
 # CardGame
 A program to simulate a card game called "Match"
 
-#Game Setup
+## Game Setup
 Choose a number of packs of playing cards, and combine them into a single deck.
 Shuffle the deck.
 
-#Playing the game
+## Playing the game
 Cards are played sequentially from the top of the deck into the pile.
 If two cards played sequentially match (see "Match condition" below), the first player
 to declare "Match!" takes all the cards in the pile. For the purposes of this simulation,
@@ -16,7 +16,7 @@ ends when no more cards can be drawn from the deck and no player can declare
 The player that has taken the most cards is the winner. The game may end in a
 draw.
 
-#Match condition
+## Match condition
 The match condition determines when two cards match for the duration of the game.
 There are three options:
 ● The suits of two cards must match
@@ -28,13 +28,13 @@ the value 7.
 ● Both suit and value must match
 ○ Example: "Jack of spades" only matches another "Jack of spades"
 
-#As input, the program should ask:
+## As input, the program should ask:
 1. how many packs of cards to use for the deck
 2. which match condition to use
 It should then simulate the game.
 The program should output the results by either declaring the winner, or a draw.
 
-#Glossary
+## Glossary
 Pack - A complete set of 52 playing cards.
 Deck - The set of cards in play. This could be multiple packs, or a subset of cards
 from a single pack depending on the game being played.
